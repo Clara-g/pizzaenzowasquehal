@@ -1,0 +1,544 @@
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+:root{
+    font-size: 16px; /*1rem*/
+}
+
+
+body{
+    width:  auto;
+    margin: 0;
+    font-family: 'montserrat';
+    background-image: url(../img/pizzabgc.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #1f1f1f;
+    font-size: 0;
+}
+
+header{
+    display: block;
+    width: 100%;
+    height: 70px;   
+    padding-top: 20px;
+}
+
+h1{
+    color:  white;
+    font-size: 25px;
+    font-family: 'montserrat';
+    font-weight: 200;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0 0 0 10%;
+    display: inline-block;
+    width:50%;
+    visibility: hidden;
+}
+
+h2{
+    color:  white;
+    background: #181819;
+    font-size: 1.5rem;
+    font-family: 'Abril Fatface','montserrat';
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding: 10px 0 10px 15px;
+    text-align: center;
+    margin: 0;
+}
+    
+    
+
+
+header > button{ 
+    background:rgb(136, 189, 52);
+    padding: 5px 10px 5px 10px;
+    margin:  10px 0px 20px 10px;
+    border:none;
+    border-radius:2px;
+    display: inline-block;
+    width:15%; 
+}
+
+header > button > a{
+    font-family: 'Montserrat','Pacifico';
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight : bold;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+}
+
+header > button > a > img {
+    vertical-align: middle;
+    color: #fff;
+}
+
+#img{
+    display: inline;
+    margin-left: 160px; 
+}
+
+.burger{
+    visibility: hidden;
+}
+/*---DEBUT essaie header > nav---*/
+body > header > nav {
+    display   : inline-block;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: uppercase;
+    background-color:  #11151667;
+    top: 5%;
+}
+
+body > header > nav > a {
+    padding         : 0 20px;
+    color           : #f3f3f3;
+    text-decoration : none;
+    transition      : .4s;
+}
+
+body > header > nav > a:hover {
+    color : rgb(209, 209, 209);    
+}
+
+body >header > nav > div {
+    position   : fixed;
+    height     : 2px;
+    width      : 0;
+    transition : .8s;
+    left       : -500px;  
+}
+
+body > header > nav > a:first-of-type:hover ~ div {
+    width            : 105px;
+    left             : 35px;
+    background-color :  white;   
+}
+
+body > header > nav> a:nth-of-type(2):hover ~ div {
+    width            : 75px;
+    left             : 170px;
+    background-color :white;
+}
+
+body > header > nav > a:nth-of-type(3):hover ~ div {
+    width            : 120px;
+    left             : 280px;
+    background-color : white;
+}
+
+body > header > nav> a:nth-of-type(4):hover ~ div {
+    width: 105px;
+    left: 435px;
+    background-color : white;
+}
+/*---FIN essaie header > nav---*/
+/*body > nav {
+    display   : inline-block;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: uppercase;
+    background-color:  #11151667;
+    top: 5%;
+}
+
+body > nav > a {
+    padding         : 0 20px;
+    color           : #f3f3f3;
+    text-decoration : none;
+    transition      : .4s;
+}
+
+body > nav > a:hover {
+    color : rgb(209, 209, 209);    
+}
+
+body > nav > div {
+    position   : fixed;
+    height     : 2px;
+    width      : 0;
+    transition : .8s;
+    left       : -500px;  
+}
+
+body > nav > a:first-of-type:hover ~ div {
+    width            : 105px;
+    left             : 35px;
+    background-color :  white;   
+}
+
+body >nav> a:nth-of-type(2):hover ~ div {
+    width            : 75px;
+    left             : 170px;
+    background-color :white;
+}
+
+body > nav > a:nth-of-type(3):hover ~ div {
+    width            : 120px;
+    left             : 280px;
+    background-color : white;
+}
+
+body >nav> a:nth-of-type(4):hover ~ div {
+    width: 105px;
+    left: 435px;
+    background-color : white;
+}
+*/
+body > article[title="accueil"]{
+    display: block;
+    width: 100%;
+    height: 330px;
+    color:  white;
+}
+
+body > article[title="accueil"] > p {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 50px 0 0 0;
+}
+
+body > article[title="accueil"] > p:nth-of-type(2){
+margin: 0;
+}
+
+body > article[title="accueil"] > p:nth-of-type(3), body > article[title="accueil"] > p:nth-of-type(4) {
+margin:0;
+font-size: 0.8rem;
+}
+
+body > article > a > img{
+    display: block;
+    position: relative;
+    width: 22%;
+    z-index: 1;
+    left: calc((100% - 22%)/2);
+    margin: 90px 0 0 0;   
+}
+/*body > article[title="order"]{
+    display: flex;
+    justify-content: center;
+}
+body > article[title="order"] > section {
+    
+    display: flex;
+    justify-content: center;
+    width : 45%;
+    height: 100px;
+    vertical-align: middle;
+    padding-top: 25px;
+    background-color: rgba(245, 245, 245, 0.63);
+    color: black;
+   
+}
+
+body > article[title="order"] > section > a > img {
+    display: block;
+    margin: auto;
+    width : 10%;
+}
+
+body > article[title="order"] > section > a {
+    display: flex;
+    font-size: 1.5rem;
+    color: black;
+    padding-left: 0;
+    text-decoration : none;
+    
+}*/
+
+/*----------------footer--------------------------*/
+footer{
+    position: relative;
+    width: 100%; 
+    height: 60px; 
+    bottom: 0;
+    background-color: #181818;
+}
+
+footer > div{
+    display: block;
+    width :100%;
+}
+
+footer > div > section{
+    display: inline-block;
+    position: relative;
+    width: 33%; 
+    height: 10px;
+}
+
+footer > div > section[name="green"]{
+    background:rgb(136, 189, 52);
+}
+
+footer > div > section[name="white"]{
+    background:white;
+}
+
+footer > div > section[name="red"]{
+    background-color: rgb(195, 37, 38);
+}
+
+footer > article[name="footer"]{
+    display: flex;
+    width : 100%;
+    padding-top: 10px;
+}
+
+footer > article[name="footer"] > p,
+article[name="footer"] > a {
+    width : 33%; 
+    margin: 0;
+    padding-left :10%;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'montserrat';
+    line-height: 25px;   
+}
+
+/*------------responsive-----*/
+@media  screen and (max-width: 1200px) {
+    body > article[title="accueil"] > div {
+        display: block;
+        width: 100%;
+        top: 80%;
+        background-color: black;
+    }
+    body > article[title="accueil"] > div > a{
+        font-size: 25px;
+    }
+
+}
+
+@media  screen and (max-width: 1000px) {
+    /*------------burger------------*/
+    header > nav{
+        visibility: hidden;
+        width: 0;
+        transition: .4s;
+        }
+        a {
+        display: block;
+        }
+    
+       header > nav > div {
+        visibility: hidden;
+        }
+    
+    
+        button{ 
+        outline: none;
+        }
+
+    .burger{
+        position: relative;
+        left: 50px;
+        top:    -480px;
+        width: 80px;
+        height: 60px;
+        padding: 0;
+        border: 1px solid #AAA;
+        background: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+        transition: .4s;
+        cursor: pointer;
+        visibility: visible;
+    }
+    button.burger:hover{
+        box-shadow : 0 0 3px rgba(255, 255, 255, 0.753);
+    }
+    
+    button.burger::before,
+    button.burger::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 20%;
+        bottom: 10%;
+        width: 60%;
+        height: 15%;
+        transition: box-shadow .2s .4s, top .4s, bottom .4s, transform .4s;
+    }
+    .burger::before {
+        top: 10%;
+        background-color: rgb(136, 189, 52);
+        box-shadow: 0 19px 0 0 rgba(253, 252, 252, 0.897);
+    }
+    
+    .burger::after{
+        background-color: rgb(195, 37, 38)
+    }
+    
+    .nav-open{   
+        position: fixed;
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        left:0;
+        top: 0;
+        background-color:#000;
+        border: 1px white;
+        transition: .4s;
+    }
+    .nav-open > a {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    .btn-open{
+        left: 70%;
+        transform: translateX(50%);
+        z-index: 20;
+    }
+    /*------------------button order + gps -------------*/
+    header > button > a{
+        font-size: 12px;
+
+    }
+    /*-----------Article accueil--------------------*/
+    body > article[title="accueil"] > div > a{
+        font-size: 20px;
+    } 
+}
+
+/*------------responsive-----*/
+@media  screen and (max-width: 1000px) {
+/*----------------Logo---------*/
+    body > article > a > img {
+        left: calc((100% - 35%)/2);
+        width: 35%;
+
+    }
+/*-------------------accueil------------------*/
+body > article[title="accueil"] > p {
+    font-size: 1.3rem;
+    }
+}
+
+/*------------responsive-----*/
+@media  screen and (max-width: 700px) {
+
+/*-----------------main----------------------------*/
+main{
+    background-color: black;
+}    
+
+/*------------------------- Header > buttons ------------------*/
+header > button {
+    width: 20%;
+    padding: 20px 24px 15px 20px;
+    margin-right: 17px;
+    margin-left: -18px;
+    border-radius: 2px;
+}
+
+header > button > a {
+    font-size: 0;
+}
+/*----------------------menu burger--------------------------*/
+.burger{
+    top: -370px;
+}
+
+
+/*-----------------------------header > logo ---------------------*/
+header > button > a {
+    width: 60%;
+    left: calc((100% - 50%)/2);
+}
+
+header > button > a > img  {
+    padding-left : 5px;
+}
+
+/*------------------------logo---------------------------*/
+body > article > a > img{
+    left: calc((100% - 40%)/2);
+    width: 40%;
+    top: 25%;
+}
+/*--------------------------"ouvert les soirs du mardi au dimanche...."-----------*/
+body > article[title="accueil"] {
+    height: 235px;
+}
+
+
+body > article[title="accueil"] > p{
+    top: 25%;
+    margin: 0;
+    color: black;
+    background-color: rgba(252, 249, 249, 0.5);
+    text-decoration: none;
+    
+}
+
+
+body > article[title="slogan"] > button {
+    width: 50%;
+    margin: 100px auto;
+    padding: 10px 10px 10px 10px;
+}
+
+body > article[title="slogan"] > p:first-of-type {
+    font-size: 15px;
+    /*margin: 40px 0 0 0;*/
+}
+
+/*------------------Footer-----------------------------------*/
+footer > article[name="footer"] > p, article[name="footer"] > a {
+    width: 30%;
+    padding-left: 5%;
+    font-size: 10px;
+    line-height: 15px;
+    }
+
+}
+
+/*-----------------------------responsive mobile-----------------*/
+@media all and (max-device-width: 480px){
+    /*--------------------logo-------------*/
+    body > article > a > img  {
+    left: calc((100% - 60%)/2);
+    width: 60%;
+    }
+
+    /*-------------------------burger button-----------------*/
+    .burger{
+        left: 20px;
+
+    }
+    .btn-open {
+        position: relative;
+        left:0;
+        top: -350px;
+    }
+    
+    /*--------------------Horraires d'ouverture + tel---------*/
+    /*body > article[title="accueil"] > p {
+        display:
+        top: 25%;
+        
+    }*/
+    /*-----------------------Slogan-----------------------*/
+    article[title="slogan"] > p {
+        margin: 40px 0 0 0;
+    }
+}

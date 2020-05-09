@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+main > article > p, li {
+
+    color: white; 
+    font-size: 1.2rem;   
+}
+/*------------------------ARTICLE STORY TELLING--------------------*/
+main > article[title="storytelling"]{
+    height: auto;
+    width: 100%;
+}
+
+main > article[title="storytelling"] > p:first-of-type{
+    display:  block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size : 1.5rem;
+    letter-spacing: 4px;
+    
+}
+
+main > article[title="storytelling"] > section{
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding-top: 100px;
+    background-color: rgba(245, 245, 245, 0.63);
+
+}
+main > article[title="storytelling"] > section > p {
+width:30%;
+margin: auto;
+color:black;
+text-align :justify;
+padding-bottom: 80px;
+font-size: 1.2rem;
+}
+
+main > article[title="storytelling"] > section > img {
+padding: 0 200px 85px 0;
+}
+
+/*--------------A la pizzeria -----------------*/
+main > article[title="storytelling"] > p:first-of-type{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat' ;
+    font-size: 1.5rem;
+    letter-spacing: 5px;  
+}
+
+/*--------------------Enzo Wasquehal ---------------*/
+main > article[title="storytelling"] > p:nth-of-type(2){
+    font-family: 'Abril Fatface','Montserrat' ;   
+    font-style: italic;
+    text-align: left;
+}
+/*--------------------Les produits ---------------*/
+/*main > article[title="product"]{
+    padding-top: 100px;
+}*/
+main > article[title="product"] > section{
+    background-color: #000000;
+}
+main > article[title="product"] > section > ul > li , div > p{
+    text-align: center;
+    color: white;
+    list-style: none;
+    font-size: 1rem;
+}
+
+/*--------------------Les produits > france ---------------*/
+main > article[title="product"] > section[name="france"]{
+    width: 100%;
+    display : block;
+    height: 350px;
+    padding: 80px 0 0 0;
+    
+
+    
+}
+main > article[title="product"] > section[name="france"] > img {
+ width: 6%;  
+margin-left: calc(100% - 53%);
+padding-bottom: 15px;
+
+}
+
+
+main > article[title="product"] > section[name="france"] > ul {
+    padding:0;
+}
+
+
+/*--------------------Les produits > autre provenance ---------------*/
+main > article[title="product"] > section[name="otherorigin"]{
+    display:    flex;  
+}
+
+main > article[title="product"] > section[name="otherorigin"] > div {
+ width : calc(100% /4);
+ height: 200px;
+ margin-left: 65px;
+}
+
+main > article[title="product"] > section[name="otherorigin"] > div > img {
+margin-left : calc(22% * 2);
+width: 10%;
+}
+
+/*------------responsive-----*/
+@media  screen and (max-width: 1000px){
+
+    /*----------------Storytelling--------------------------------------*/
+    main > article[title="storytelling"] > section {
+        display: block;  
+    }
+
+    main > article[title="storytelling"] > section > p{
+        width: 50%;
+        margin-bottom : 100px;
+    }
+
+
+    main > article[title="storytelling"] > section > img{
+        margin-left: calc((100% - 50%) /2);
+       
+    }
+    main > article[title="product"] > section[name="otherorigin"] > div > img {
+        width: 20%;
+    }
+
+}
+
+
+@media  screen and (max-width: 700px){
+body{
+    background-repeat: no-repeat;
+}
+ /*-------------------------------------Story telling--------------------*/    
+ main > article[title="storytelling"] > section {
+     background-color: black;
+ }
+    main > article[title="storytelling"] > section > p{
+        display: block;
+        width: 80%;
+        color: white;
+    
+    }
+    main > article[title="storytelling"] > p:first-of-type{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: auto 0;
+        
+    }
+    main > article[title="storytelling"] > p:nth-of-type(2){
+        text-align: center;
+        width: 100%;
+    }
+
+    main > article[title="storytelling"] > section > img {
+        width: 90%;
+        margin-left: calc((100% - 90%) /2);
+    }
+
+/*-------------------------------All products-----------------------*/
+
+
+
+/*----------------------------- Product France------------------------------*/    
+main > article[title="product"] > section[name="france"] {
+    margin-bottom: 100px;
+}
+main > article[title="product"] > section[name="france"] > img {
+ width: 10%;
+ margin-left: calc(100% - 55%);
+}
+
+main > article[title="product"] > section[name="france"] > ul{
+    padding: 0;
+
+}
+
+
+/*------------------------Products others countries ----------------------*/
+main > article[title="product"] > section[name="otherorigin"] {
+    display: block;
+}
+main > article[title="product"] > section[name="otherorigin"] > div{
+    margin: auto;
+
+}
+
+}
+
+
+
+
+
+/*-----------------------------responsive mobile-----------------*/
+@media all and (max-device-width: 480px)
+{
+    /*-------------------------------------Story telling--------------------*/    
+ main > article[title="storytelling"] > section {
+    background-color: black;
+}
+   main > article[title="storytelling"] > section > p{
+       display: block;
+       width: 80%;
+       color: white;
+   
+   }
+   main > article[title="storytelling"] > p:first-of-type, article[title="storytelling"] > p:nth-of-type(2){
+       display: block;
+       text-align: center;
+       width: 100%;
+       margin: auto 0;
+       
+   }
+
+   main > article[title="storytelling"] > section > img {
+       width: 90%;
+       margin-left: calc((100% - 90%) /2);
+   }
+
+/*-------------------------------All products-----------------------*/
+
+
+
+/*----------------------------- Product France------------------------------*/    
+main > article[title="product"] > section[name="france"] {
+   margin-bottom: 100px;
+}
+main > article[title="product"] > section[name="france"] > img {
+width: 10%;
+margin-left: calc(100% - 55%);
+}
+
+main > article[title="product"] > section[name="france"] > ul{
+   padding: 0;
+
+}
+
+
+/*------------------------Products others countries ----------------------*/
+main > article[title="product"] > section[name="otherorigin"] {
+   display: block;
+}
+main > article[title="product"] > section[name="otherorigin"] > div{
+   margin: auto;
+
+}
+}

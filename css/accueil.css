@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+:root{
+    font-size:16px;
+}
+
+article[title="slogan"] {
+    display: block;
+    height: 190px;
+    color: white;
+}
+
+article[title="slogan"] > p{
+    text-align: center ;
+    font-size: 1.2rem;
+    
+}
+
+body > article[title="slogan"] > p:first-of-type{
+    display: block;
+    width: auto;
+    font-size: 22px;
+}
+
+article[title="slogan"] > button {
+    display: block;
+    position: relative;
+    width:  15%;
+    padding: 5px 10px 5px 10px;
+    margin: auto;
+    /*left: calc((100% - 15%)/2);*/
+    /*transform: translateZ(0);*/
+    background:rgb(136, 189, 52); 
+   /*backface-visibility: hidden;*/
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    border-radius:2px;
+    border:none;
+}
+
+article[title="slogan"] > button:hover, button:focus, button:active{
+    transform: scale(1.1);
+}
+
+article > button > a {
+    font-family: 'Montserrat','Pacifico';
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight : bold;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+}
+
+#popup{
+    display: block;
+    position: absolute;
+    width: 35%;
+    top: 20%;
+    left: calc((100% - 35%)/2);
+    height: 335px;
+    margin: auto;
+    z-index: 15;
+    background-color: black;
+    text-align: center;
+    border-radius: 3px;
+    position: fixed;
+    
+}
+#popup button {
+    position: absolute;
+    width: 40px;
+    right: 2%;
+    top: 3%;
+    height: 32px;
+    padding-top: 10px;
+    opacity: 0.3;
+    border: none;
+    background-color:white; 
+    z-index: 10;  
+}
+
+#popup button:hover {
+    opacity:1;
+    background-color:   whitesmoke;
+}
+
+#popup button:before, #popup button:after{
+    position: absolute;
+    content:'';
+    width: 3px;
+    height: 33px;
+    top:0;
+    background-color: black; 
+}
+
+#popup button:before{
+    transform: rotate(45deg);  
+}
+
+#popup button:after{
+    transform: rotate(-45deg);
+}
+
+#popup  p {
+ color: white; 
+ text-align: center;
+ margin: 20px 0 0 0;
+}
+
+#popup > p:first-of-type{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+}
+#popup > p:nth-of-type(2){
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.7rem;
+    font-weight: 900;
+    color: #88bd34;
+    text-transform: uppercase;
+   
+
+}
+#popup > p:nth-of-type(3){
+    font-size:1rem;
+    padding: 5px;
+}
+
+#popup > p:nth-of-type(4){
+    font-family: 'montserrat';
+    font-size:2rem;
+    font-weight: 400;
+
+}
+
+/*--- POPUP FOOTER FLAG----*/
+#popup > section{
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom:0;
+
+}
+#popup > section > div{
+    display: inline-block;
+    position: relative;
+    width: 33%;
+    height: 15px;
+    background-color: white;
+}
+
+#popup > section > div:first-of-type{
+    background: #88bd34;
+}
+
+#popup > section > div:nth-of-type(2){
+    background:white;
+}
+
+#popup > section > div:nth-of-type(3){
+    background-color: #c32526;
+}
+
+@media  screen and (max-width: 1000px){
+    article[title="slogan"] > button {
+        width: 20%;
+    }
+    #popup{
+        width: 60%;
+        left: calc((100% - 60%)/2);
+    }
+    #popup button{
+        width: 20px;
+        right: 0;
+    }
+}
+
+/*------------responsive-----*/
+@media screen and (max-width: 700px){
+    body > article[title="slogan"] {
+        height: 400px;
+        background:  linear-gradient(#000000, #181818);
+    }
+
+    #popup{
+        width: 80%;
+        left: calc((100% - 80%)/2);
+    }
+
+    #popup button{
+        width: 20px;
+        right: 0;
+    }
+}
+
+/*-----------------------------responsive mobile-----------------*/
+@media all and (max-device-width: 480px){
+    #popup{
+        width: 90%;
+        top: 5%;
+        left: calc((100% - 90%)/2);
+        height: 90%;
+    
+    }
+
+    #popup>button{
+        width: 10%;
+        top: 2%;
+        right: 10px;
+      
+    }
+    #popup button:before, button:after{
+      color: white;  
+    }
+    #popup h2{
+        padding: 20px 0 20px 0;   
+    }
+
+    #popup p{
+        margin: 55px 0 0 0;
+    }
+    
+    /*------------------Article Slogan -------------------*/
+    body > article[title="slogan"] {
+    height: 370px;
+    }
+    
+    /*-------------------------Date anniversaire---------------*/
+        article[title="slogan"] > p {
+            margin: 60px 0 0 0;
+        }
+}
+
+
+

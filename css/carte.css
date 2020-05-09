@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+:root{
+    font-size: 16px;
+}
+body{
+    font-size: 0;
+    margin: 0;
+    font-family: 'montserrat';
+    color: #1f1f1f;
+    background-image: url(../img/imgbg5.svg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    background-color: rgba(252, 249, 249, 0.5);
+    border-radius: 5px 5px 5px 5px;
+}
+
+b{
+    font-weight: 600;
+}
+
+.listepizza{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0 0 0 ;  
+    
+}
+.listepizza li{
+    font-size: 16px;
+    list-style: none;
+    line-height: 25px; 
+    text-align: center;
+}
+
+.listesalade{
+    display: inline-block;
+    width: 50%;
+    font-size:16px;
+}
+
+.listesalade li{
+    font-size: 16px;
+    font-family: 'montserrat';
+    list-style: none;
+    line-height: 25px; 
+}
+
+.listepates{
+    display: inline-block;
+    width: 50%;
+    font-size:16px;
+    float: left;
+}
+.listepates li{
+    font-size: 16px;
+    font-family: 'montserrat';
+    list-style: none;
+    line-height: 25px; 
+}
+
+.desserts{
+    display: inline-block;
+    width: 100%;
+    font-size:16px; 
+    text-align :    center;    
+}
+
+
+
+.desserts li {
+    font-size: 16px;
+    font-family: 'montserrat';
+    list-style: none;
+    line-height: 25px;    
+    
+}
+
+
+@media  screen and (max-width: 700px){
+    .listepates h2{
+        height: 60px;
+        position: relative;
+        padding: 25px 0 0 0;
+    }
+
+}
+
+@media all and (max-device-width: 480px){
+/*------------*/
+}

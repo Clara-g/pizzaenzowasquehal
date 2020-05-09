@@ -1,0 +1,26 @@
+:root{
+    font-size: 16px; /*1rem*/
+}
+
+
+body{
+    width:  auto;
+    margin: 0;
+    font-family: 'montserrat';
+    background: linear-gradient(#000000, #181818);
+    font-size: 0;/*delete marge*/
+    
+}
+
+ #mentionslegales{
+    background-color: rgba(245, 245, 245, 0.63);
+    width: 400px;
+    margin: auto;
+    padding: 30px 0 30px 0;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+
+

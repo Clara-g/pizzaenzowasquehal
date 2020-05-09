@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+:root{
+    font-size: 16px;
+}
+
+/*----------------------- Article adress + phone + mobil------------------*/
+body > article[name="adress"]{
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    height: 525px;
+    margin: 0 30px 0 30px;
+    vertical-align: top;
+    text-align: center;
+    background-image: url(../img/pizzeria.png);
+    background-size: 605px;
+    background-repeat: no-repeat;
+}
+
+body > article[name="adress"] > p {
+    font-size: 1rem;
+    margin-top: 100px;
+    color: white;
+}
+
+body > article[name="adress"] > section {
+    
+    display: inline-block;
+    position: relative;
+    width : 45%;
+    height: 100px;
+    vertical-align: middle;
+    padding-top: 25px;
+    background-color: rgba(245, 245, 245, 0.63);
+    color: black;
+   
+}
+
+body > article[name="adress"] > section > a > img {
+    width : 15%;
+}
+
+body > article[name="adress"] > section > a {
+    font-size: 1.5rem;
+    color: black;
+    padding-left: 0;
+    text-decoration : none;
+    
+}
+
+
+
+/*-------------------------------iframe MAP ------------------------*/
+iframe{
+    display: inline-block;
+    position: relative;
+    width: 45%; 
+    margin: auto;
+    margin-bottom: 20px;  
+    
+}
+
+
+
+@media  screen and (max-width: 1000px){
+
+    /*--------article adress------------*/
+    body > article[name="adress"]{
+        width: 90%;
+        /*width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 450px;*/
+    
+    }
+    body > article[name="adress"] section, iframe{
+        display: block;
+        width: 90%;
+        margin: 10px auto ;
+        padding: 20px 0 0 0;
+        
+
+    }
+    body > article[name="adress"] > section > a > img {
+        width: 5%;
+    }
+
+}
+
+
+@media  screen and (max-width: 700px){
+    body > article[name="adress"] {
+        display: block;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    body > article[name="adress"] section{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0 0 0;
+        
+
+    }
+    body > article[name="adress"] > section > a {
+        width: 50%;
+        margin: 0 0 0 90px;
+    }
+    body > article[name="adress"] > section > a > img {
+        width: 15%;
+    }
+}
+/*-----------------------------responsive mobile-----------------*/
+@media all and (max-device-width: 480px)
+{
+
+    body > article[name="adress"] {
+        display: block;
+        height: 390px;
+        margin: auto;
+    }
+    body > article[name="adress"] > section > a {
+        width: 90%;
+        margin: auto;
+    }
+}
